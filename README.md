@@ -20,12 +20,10 @@ The Movie Management WebApp allows users to:
 - **TailwindCSS 4.2.2** - Utility-first CSS framework for styling
 - **Axios 1.15.0** - HTTP client for API communication
 - **React Hot Toast 2.6.0** - Beautiful toast notifications
-- **ESLint** - Code linting and formatting
 
 ### Backend
 - **Go 1.26.2** - High-performance backend language
 - **Gin 1.12.0** - HTTP web framework
-- **MongoDB Driver v2.5.0** - NoSQL database integration
 - **CORS** - Cross-origin resource sharing support
 
 ### Database
