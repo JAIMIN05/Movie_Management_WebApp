@@ -39,7 +39,6 @@ backend/
 |   |   config.go      # Application configuration
 |   |   db.go          # Database connection management
 |   controllers/
-|   |   health_controller.go  # Health check endpoints
 |   |   movie_controller.go   # Movie CRUD operations
 |   models/
 |   |   movie.go       # Movie data model and validation
@@ -104,9 +103,6 @@ frontend/
 - `POST /api/movies` - Create a new movie
 - `PUT /api/movies/:id` - Update an existing movie
 - `DELETE /api/movies/:id` - Delete a movie
-
-### Health Check
-- `GET /api/health` - Application health status
 
 ### Query Parameters (for GET /api/movies)
 - `title` - Partial title search (case-insensitive)
