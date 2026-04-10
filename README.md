@@ -223,10 +223,6 @@ The edit movie interface for updating existing movie information.
 ![Delete Movie](screenshots/7.png)
 Movie deletion functionality with confirmation dialog for removing movies from the collection.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ---
 
 **Built with React, Go, and MongoDB**
