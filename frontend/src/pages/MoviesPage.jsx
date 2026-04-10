@@ -72,8 +72,7 @@ export function MoviesPage() {
             Movies
           </h2>
           <p className="mt-2 max-w-xl text-pretty text-sm leading-relaxed text-slate-600 sm:text-base dark:text-slate-400">
-            Search, filter, paginate, and curate your collection — synced with
-            your Go API and MongoDB.
+            Explore and manage your movie collection with smart search and filters.
           </p>
         </div>
         {!formOpen ? (

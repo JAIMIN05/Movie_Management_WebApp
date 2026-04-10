@@ -33,10 +33,6 @@ export function MovieFilters({
           <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100">
             Search &amp; filter
           </h3>
-          <p className="mt-1 max-w-md text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-            Title search is debounced so the API runs after you pause typing.
-            Genre and year apply on change.
-          </p>
         </div>
         {hasAny ? (
           <button

@@ -4,7 +4,9 @@ const MAX = 5
  * @param {{ value: number; className?: string }} props
  */
 export function StarRating({ value, className = '' }) {
-  const rounded = Math.min(MAX, Math.max(0, Math.round(Number(value) || 0)))
+  const rating = Math.min(MAX, Math.max(0, Number(value) || 0))
+  const fullStars = Math.floor(rating)
+  const hasHalfStar = rating % 1 >= 0.5
 
   return (
     <div
@@ -16,12 +18,14 @@ export function StarRating({ value, className = '' }) {
           <span
             key={i}
             className={
-              i < rounded
+              i < fullStars
+                ? 'text-amber-500 drop-shadow-sm dark:text-amber-400'
+                : i === fullStars && hasHalfStar
                 ? 'text-amber-500 drop-shadow-sm dark:text-amber-400'
                 : 'text-slate-200 dark:text-slate-600'
             }
           >
-            ★
+            {i === fullStars && hasHalfStar ? '⯨' : '★'}
           </span>
         ))}
       </span>
